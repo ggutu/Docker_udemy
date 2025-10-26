@@ -80,7 +80,21 @@ index.html  message.html
 
 To access
 http://localhost:8080/message.html
-    
+    ========================
+ docker exec -it my_apache /bin/bash
+     apt update
+     apt install vim -y
+      cd logs
+      ls 
+       vi httpd.conf
+      enaible custom log--remove the comment
+      exit
+ docker restart my_apache
+ docker cp my_apache:/usr/local/apache2/logs/access_log 
+ then check the current directory 
+ ls
+ 
+
 
 
 
