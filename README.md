@@ -1,6 +1,7 @@
 # Docker_udemy
 
  docker run --name nginxcon -d -p 8000:80 
+ http://localhost:8000
    Explain
    ======================================================
 localhost (IP address) → identifies your computer (the host).
