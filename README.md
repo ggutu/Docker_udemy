@@ -27,7 +27,16 @@ Flag	Meaning	Purpose
 
 -t	TTY (teletype terminal)	Allocates a terminal interface so you can interact with the container like a shell.
 
+docker run --name <contpd> -it -d -p 8033:80 httpd
+
 Use docker exec -it <container_name> /bin/bash to enter and interact with your running container.
+   /usr/local/apache2/htdocs#
+  Change file index.html and refresh browser.
+    2  cd htdocs   then install apt update then install vim or nano
+    3  ls
+    4  vim index.html
+    5  apt update && apt install -y vim 
+    7  vim index.html
 
 docker logs <nginxcon1> container name
 is used to view the output (logs) from a running or stopped Docker container — in this case, the container named nginxcon1.
