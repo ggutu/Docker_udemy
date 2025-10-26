@@ -1,4 +1,5 @@
 # Docker_udemy
+file:///C:/Users/gizac/Downloads/Efficient-Docker-Slides%20(1).pdf
 
  docker run --name nginxcon -d -p 8000:80 httpd
  
