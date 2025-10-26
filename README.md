@@ -3,7 +3,7 @@
  docker run --name nginxcon -d -p 8000:80 httpd
  
  To acess on web browser
- http://localhost:8000  ----> which is not secure
+ http://localhost:8000  ----> which is not secure -
 
  
  Explain
