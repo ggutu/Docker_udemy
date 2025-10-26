@@ -20,5 +20,11 @@ port number is logical endpoint on device.
 
 This container  Apache web server runinig on port 80
 
+docker run --name container -it -d -p 8080:80 httpd ,only explain -it
+============================
+Flag	Meaning	Purpose
+-i	Interactive	Keeps STDIN (keyboard input) open, even if not attached.
+-t	TTY (teletype terminal)	Allocates a terminal interface so you can interact with the container like a shell.
+
 
 
