@@ -8,7 +8,7 @@ apt update
 apt install vim -y
 vim nginx.conf --nothing change 
 logs 
-docker logs <container name>
+docker logs <container name>  or /var/log/nginx
 
 
 
