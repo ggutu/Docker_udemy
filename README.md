@@ -59,6 +59,19 @@ docker exec -it connginx77 /bin/bash
     3  cd /usr/share/nginx
     8  vim html.index
     9  apt update && apt install -y vim
+
+    ==============================
+2️⃣ Reopen PowerShell as Administrator
+Click Start → type “PowerShell” → Right-click → “Run as Administrator
+Then install choco install vim -y
+
+docker cp <message.html> <my_apache>:/usr/local/apache2/htdocs/
+  
+root@8217b8286bef:/usr/local/apache2/htdocs# ls
+index.html  message.html
+
+To access
+http://localhost:8080/message.html
     
 
 
