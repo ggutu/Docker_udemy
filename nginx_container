@@ -1,1 +1,7 @@
+ docker run --name my_nginx -d -p 8081:80 nginx
+
+ docker exec -it my_nginx /bin/bash  ----------->to see the path of index.html file which is /usr/share/nginx/html
+
+docker cp .\message.html my_nginx:/usr/share/nginx/html ----------copy from host machine to the container name my_nginx--The message.html file already created usin vim message.html <h1> This is my first html file </h1>
+
 
