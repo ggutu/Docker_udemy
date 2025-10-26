@@ -90,10 +90,15 @@ http://localhost:8080/message.html
       enaible custom log--remove the comment
       exit
  docker restart my_apache
- docker cp my_apache:/usr/local/apache2/logs/access_log 
+  then check the current directory 
+ 
+ docker cp my_apache:/usr/local/apache2/logs/access_log . 
+ cat access_log 
  then check the current directory 
  ls
+ ================================
  
+ *Copy data from machine containers to  host machine
 
 
 
