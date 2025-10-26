@@ -12,7 +12,9 @@ localhost (IP address) → identifies your computer (the host).
 Inside the container, Node listens on port 80 — another “door” for the app service.
 ===================================
 -p 8000:80 → Map host port 8000 → container port 80
+
 port number is logical endpoint on device.
+
 This container apache webserver runinig on port 80
 
 
