@@ -61,6 +61,7 @@ docker exec -it connginx77 /bin/bash
     9  apt update && apt install -y vim
 
     ==============================
+    **Copy data from host machine to containers**
 2️⃣ Reopen PowerShell as Administrator
 
 Click Start → type “PowerShell” → Right-click → “Run as Administrator
