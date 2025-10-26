@@ -50,6 +50,15 @@ Error messages
 Startup information
 
 Console output from the app
+============================
+ docker run --name connginx77 -it -d -p 8077:80 nginx
+docker exec -it connginx77 /bin/bash
+ 
+    2  ls /usr/share/nginx/html
+    3  cd /usr/share/nginx
+    8  vim html.index
+    9  apt update && apt install -y vim
+    
 
 
 
