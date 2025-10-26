@@ -52,6 +52,7 @@ Startup information
 Console output from the app
 ============================
  docker run --name connginx77 -it -d -p 8077:80 nginx
+ 
 docker exec -it connginx77 /bin/bash
  
     2  ls /usr/share/nginx/html
