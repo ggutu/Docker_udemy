@@ -4,4 +4,12 @@
 
 docker cp .\message.html my_nginx:/usr/share/nginx/html ----------copy from host machine to the container name my_nginx--The message.html file already created usin vim message.html <h1> This is my first html file </h1>
 
+apt update
+apt install vim -y
+vim nginx.conf --nothing change 
+
+
+
+
+
 
