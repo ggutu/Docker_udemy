@@ -1,1 +1,18 @@
-download the dist folder and unzip in user folder
+download the dist folder and unzip in user folder then run/create  nginx continer 
+
+docker run --name my_nginx -d -p 8080:80 nginx
+
+docker cp my_nginx:/usr/share/nginx/html/index.html ..    --> copy from container to C:\Users\gizac\container_copy whic is parent folder(..)
+
+cat ../index.html    excute thecommand  to read the file
+
+copy all the file to the container
+ docker container cp . my_nginx:my_nginx:/usr/share/nginx/html
+
+Then  http://localhost: to acces
+
+
+ Remove All Stopped Containers
+To clean up your environment and free up system resources, you can remove all stopped containers in one
+step:
+docker container prune
