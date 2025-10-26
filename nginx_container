@@ -7,6 +7,8 @@ docker cp .\message.html my_nginx:/usr/share/nginx/html ----------copy from host
 apt update
 apt install vim -y
 vim nginx.conf --nothing change 
+logs 
+docker logs <container name>
 
 
 
