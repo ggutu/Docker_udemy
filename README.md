@@ -15,7 +15,7 @@ Inside the container, Node listens on port 80 — another “door” for the app
 
 port number is logical endpoint on device.
 
-This container apache webserver runinig on port 80
+This container  Apache web server runinig on port 80
 
 
 
