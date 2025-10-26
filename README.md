@@ -3,6 +3,8 @@
  docker run --name nginxcon -d -p 8000:80 
  To acess on web browser
  http://localhost:8000
+  
+   
    Explain
    ======================================================
 localhost (IP address) → identifies your computer (the host).
