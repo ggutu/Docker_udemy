@@ -29,7 +29,7 @@ Flag	Meaning	Purpose
 
 Use docker exec -it <container_name> /bin/bash to enter and interact with your running container.
 
-docker logs nginxcon1
+docker logs <nginxcon1> container name
 is used to view the output (logs) from a running or stopped Docker container — in this case, the container named nginxcon1.
 
 This includes:
