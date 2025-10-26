@@ -107,7 +107,8 @@ http://localhost:8080/message.html
 What does the following command do?
 
 docker cp web-server:/usr/share/nginx/html/index.html ./
-   It copy index.html from webserver container to current directory hos on machine
+ 
+    answer  It copy index.html from webserver container to current directory hos on machine
 
 
 
