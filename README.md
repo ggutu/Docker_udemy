@@ -98,7 +98,11 @@ http://localhost:8080/message.html
  ls
  ================================
  
- *Copy data from machine containers to  host machine
+ *Copy data containers to  host machine
+
+
+ ===========================
+ Containers are the running instance of created from image.
 
 
 
