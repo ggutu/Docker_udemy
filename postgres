@@ -1,5 +1,5 @@
-
-
+running postgress db fully
+==============================
 docker run  --name expense-db -d -p 5432:5432  -v "C:\postgres-data:/var/lib/postgresql"  -e POSTGRES_PASSWORD=top-secret -e POSTGRES_DB=expense_tracker -e POSTGRES_USER=expense_tracker -v "${PWD}:/docker-entrypoint-initdb.d:ro" postgres:18  
 then 
 docker exec -it expense-db /bin/
