@@ -1,0 +1,32 @@
+docker run  --name expense-db -d -p 5432:5432  -v "C:\postgres-data:/var/lib/postgresql"  -e POSTGRES_PASSWORD=top-secret -e POSTGRES_DB=expense_tracker -e POSTGRES_USER=expense_tracker -v "${PWD}:/docker-entrypoint-initdb.d:ro" postgres:18  
+then 
+docker exec -it expense-db /bin/
+then 
+ psql -U expense_tracker
+ then 
+  \c expense_tracker
+  then 
+  \dt
+  then 
+   CREATE TABLE users ( id SERIAL PRIMARY KEY, name VARCHAR(100));CREATE TABLE expenses ( id SERIAL PRIMARY KEY, user_id INT REFERENCES u
+sers(id), amount NUMERIC(10,2), description TEXT, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+then
+\dt
+  then  SELECT * FROM users;
+
+ ======================================
+
+
+
+docker run  --name expense-db -d -p 5432:5432 
+                                               -v "C:\postgres-data:/var/lib/postgresql"  
+                                              -e POSTGRES_PASSWORD=top-secret
+                                              -e POSTGRES_DB=expense_tracker
+                                              -e POSTGRES_USER=expense_tracker 
+                                              -v "${PWD}:/docker-entrypoint-initdb.d:ro" postgres:18  
+==============================================================================================
+     
+
+
+
+-v "C:/Users/gizac/OneDrive/Desktop/Docker_Udemy/expense-tracker-base:/docker-entrypoint-initdb.d:ro"
