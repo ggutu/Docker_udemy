@@ -34,3 +34,6 @@ To run two tier backend and db togather
 ======
 First step --network need to create before run also make sure volume exist 
 docker run  --name expense-db --network expense-tracker -d -v "postgres-data:/var/lib/postgresql"  -e POSTGRES_PASSWORD=top-secret -e POSTGRES_DB=expense_tracker -e POSTGRES_USER=expense_tracker -v "${PWD}/db:/docker-entrypoint-initdb.d:ro" postgres:18 
+backend container
+=====
+ docker run --name expense-backend-container --network expense-tracker -e DATABASE_HOST=expense-db  -d -p 8080:5001 expense-backend
