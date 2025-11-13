@@ -1,7 +1,11 @@
 
+Backend 
+
+docker run --name frontend-container --mount type=volume,source=db-volume,target=/app/data --network  expense-tracker  -d -p 8081:80 front-expense
+
 docker system prune -a --volumes --To clean all unused containers,images,volume
 
 
-Frontand 
+Frontend 
 
 docker run --name frontend-container --mount type=volume,source=db-volume,target=/app/data --network  expense-tracker  -d -p 8081:80 front-expense
