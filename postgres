@@ -38,13 +38,9 @@ backend container
 =====
  docker run --name expense-backend-container --network expense-tracker -e DATABASE_HOST=db  -d -p 8080:5001 expense-backend
 
-
-
-
-
-
-
 docker run --name expense-db --network expense-tracker -d `-v postgres-data:/var/lib/postgresql `-e POSTGRES_PASSWORD=top-secret `-e POSTGRES_DB=expense_tracker `-e POSTGRES_USER=expense_tracker `
 -v "${PWD}/db:/docker-entrypoint-initdb.d:ro" `postgres:18
+==================================update 
+docker container run --mount type=volume,source=expense-tracker-db-vol,target=/var/lib/postgresql/data -v "$(pwd)/db":/docker-entrypoint-initdb.d:ro-e POSTGRES_PASSWORD=top-secret -e POSTGRES_DB=expense_tracker -e POSTGRES_USER=expense_tracker --name expense-db --network expense-tracker -d postgres:17
 
 
